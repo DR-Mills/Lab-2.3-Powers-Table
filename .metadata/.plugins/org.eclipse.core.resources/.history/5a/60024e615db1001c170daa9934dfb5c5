@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class MultiplicationAndPowersTable {
+
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.println("Welcome to the handy-dandy multiplication and powers table.\n" + "Please enter an integer: ");
+		int userInt = scnr.nextInt();
+		
+		System.out.println("");
+		System.out.printf("%-15s%-15s%-15s%n", "Number", "Squared", "Cubed");
+		System.out.printf("%-15d%-15d%-15d%n", 15, 1, 1500);
+
+
+	}
+
+}
