@@ -1,17 +1,3 @@
-/*
-Taks: What will the application do?
-* Prompt the user to enter an integer.
-* Display a table of squares and cubes from 1 to the value entered.
-* Ask if the user wants to continue.
-
-Build Specifications
-1. Assume that the user will enter valid data.
-2. Only continue if the user agrees to.
-
-Extended Challenge:
-Add a multiplication table to the end. For example…
-*/
-
 import java.util.Scanner;
 
 public class MultiplicationAndPowersTable {
@@ -21,10 +7,10 @@ public class MultiplicationAndPowersTable {
 		boolean keepGoing = true;
 
 		System.out.println(
-				"Why learn math when a computer can do it for you?!");
+				"Welcome to the handy-dandy multiplication and powers table. Why learn math when a computer can do it for you?!");
 
 		while (keepGoing) {
-			System.out.print("\nPlease enter an integer to see a squared and cubed table: ");
+			System.out.print("Please enter an integer: ");
 			int userInt = scnr.nextInt();
 
 			System.out.printf("%n%-9s%-10s%-9s%n", "Number", "Squared", "Cubed");
@@ -35,8 +21,7 @@ public class MultiplicationAndPowersTable {
 			}
 				System.out.print("\nContinue? (y/n): ");
 				String userContinue = scnr.next();
-				
-				keepGoing = userContinue.equalsIgnoreCase("y");
+			
 		}
 
 	}

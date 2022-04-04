@@ -21,12 +21,13 @@ public class MultiplicationAndPowersTable {
 		boolean keepGoing = true;
 
 		System.out.println(
-				"Why learn math when a computer can do it for you?!");
+				"Why learn math when a computer can do it for you?!" + "\nEnter a number and see the squares and cubes: ");
 
 		while (keepGoing) {
-			System.out.print("\nPlease enter an integer to see a squared and cubed table: ");
+			System.out.print("\nPlease enter an integer: ");
 			int userInt = scnr.nextInt();
 
+			System.out.println("SQUARES AND CUBES TABLE");
 			System.out.printf("%n%-9s%-10s%-9s%n", "Number", "Squared", "Cubed");
 			System.out.printf("%-9s%-10s%-9s%n", "======", "=======", "=====");
 
@@ -35,8 +36,7 @@ public class MultiplicationAndPowersTable {
 			}
 				System.out.print("\nContinue? (y/n): ");
 				String userContinue = scnr.next();
-				
-				keepGoing = userContinue.equalsIgnoreCase("y");
+			
 		}
 
 	}

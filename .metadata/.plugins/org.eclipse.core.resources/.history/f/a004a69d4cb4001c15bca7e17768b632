@@ -27,6 +27,7 @@ public class MultiplicationAndPowersTable {
 			System.out.print("\nPlease enter an integer to see a squared and cubed table: ");
 			int userInt = scnr.nextInt();
 
+			System.out.println("SQUARES AND CUBES TABLE");
 			System.out.printf("%n%-9s%-10s%-9s%n", "Number", "Squared", "Cubed");
 			System.out.printf("%-9s%-10s%-9s%n", "======", "=======", "=====");
 
