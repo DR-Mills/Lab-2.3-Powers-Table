@@ -7,6 +7,9 @@ Taks: What will the application do?
 Build Specifications
 1. Assume that the user will enter valid data.
 2. Only continue if the user agrees to.
+
+Extended Challenge:
+Add a multiplication table to the end. For example…
 */
 
 import java.util.Scanner;
@@ -16,6 +19,9 @@ public class MultiplicationAndPowersTable {
 
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
+		NumberFormat aLotOfWorkForAComma = NumberFormat.getInstance();
+		aLotOfWorkForAComma.setGroupingUsed(true);
+		
 		
 		boolean keepGoing = true;
 
@@ -30,7 +36,7 @@ public class MultiplicationAndPowersTable {
 			System.out.printf("%-9s%-10s%-9s%n", "======", "=======", "=====");
 
 			for (int i = 1; i <= userInt; i++) {
-				System.out.printf("%-9d%-10d%-9d%n", i, getSquared(i), getCubed(i));
+				System.out.printf("%-9d%-10d%-9d%n", i, i * i, i * i * i));
 			}
 				System.out.print("\nContinue? (y/n): ");
 				String userContinue = scnr.next();
@@ -38,13 +44,5 @@ public class MultiplicationAndPowersTable {
 				keepGoing = userContinue.equalsIgnoreCase("y");
 		}
 
-	}
-
-	private static int getSquared(int i) {
-		return i * i;
-	}
-
-	private static int getCubed(int i) {
-		return i * i * i;
 	}
 }
